@@ -1,0 +1,13 @@
+<!-- Reactive form validation-->
+<form [formGroup]="registerForm" (ngSubmit)="onsubmit()">
+  <input id="name" class="form-control" formControlName="name" >
+
+  <div *ngIf="f.name.invalid && (f.name.dirty || f.name.touched)" class="alert alert-danger">
+    <div *ngIf="f.name.errors?.required">
+      Name is required.
+    </div>
+  </div>
+
+  <br>
+  <button type="submit" [disabled]="registerForm.invalid">Register</button>
+</form>

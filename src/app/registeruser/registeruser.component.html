@@ -1,0 +1,15 @@
+<!-- template driven form validation -->
+<!--  #fname="ngModel":-exports NgModel into a local variable called name -->
+<form (ngSubmit)="onsubmit(form)" #form="ngForm">
+  First name
+  <input type="text" id="fname" name="fname" required="true"  #fname="ngModel" [(ngModel)]="user.fname">
+  <br>
+
+  <div *ngIf="fname.invalid && (fname.dirty || fname.touched)" class="alert alert-danger">
+    <div *ngIf="fname.errors?.required">
+      Name is required.
+    </div>
+  </div>
+
+  <button type="submit" [disabled]="form.invalid">Register</button>
+</form>
