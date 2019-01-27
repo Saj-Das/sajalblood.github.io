@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "gitpublish":"ngh -b  master --dir dist/testproject"
+    "gpublish":"ngh -b  master --dir dist/testproject"
   },
   "private": true,
   "dependencies": {
