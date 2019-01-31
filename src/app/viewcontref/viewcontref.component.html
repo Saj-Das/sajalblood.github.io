@@ -1,0 +1,17 @@
+<input type="text" >
+<button (click)="search()">
+  search
+  </button>
+  <button (click)="clear()">
+      clear
+      </button>
+      <div #container>
+        </div>
+
+      <ng-template #content>
+        <ul>
+            <li *ngFor="let data of names">
+              {{data}}
+              </li>
+          </ul>
+        </ng-template>

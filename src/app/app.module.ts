@@ -13,6 +13,9 @@ import { TemprefComponent } from './tempref/tempref.component';
 import { ContentprojComponent } from './contentproj/contentproj.component';
 import { ViewchildComponent } from './viewchild/viewchild.component';
 import { ContentprojdemoComponent } from './contentprojdemo/contentprojdemo.component';
+import { ViewcontrefComponent } from './viewcontref/viewcontref.component';
+import { WebstorageComponent } from './webstorage/webstorage.component';
+import { PipeComponent } from './pipe/pipe.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,6 +28,9 @@ import { ContentprojdemoComponent } from './contentprojdemo/contentprojdemo.comp
     ContentprojComponent,
     ViewchildComponent,
     ContentprojdemoComponent,
+    ViewcontrefComponent,
+    WebstorageComponent,
+    PipeComponent,
 
   ],
   imports: [
