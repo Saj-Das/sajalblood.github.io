@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="col-md-12 row">
+      <div class="col-md-12 text-center">
+        <h2>Component Interaction</h2>
+        </div>
+   
+    <div class="col-md-6">
+      <div class="col-md-12">
+        Parent
+      </div>
+      <div class="col-md-12">
+        <textarea readonly class="txtast"> {{childMsg}}</textarea>
+        <br>
+        <input type="text"  [(ngModel)]="parentmsg">
+        <button (click)="onsubmit()">Submit
+        </button>
+      </div>
+
+    </div>
+    <div class="col-md-6 ">
+     <app-childcomp [parentmsg]="msg" (childMsgOutput)="childmsg($event)">
+       </app-childcomp>
+
+    </div>
+  </div>
+</div>

@@ -1,6 +1,7 @@
 <!-- Reactive form validation-->
 <form [formGroup]="registerForm" (ngSubmit)="onsubmit()">
-  <input id="name" class="form-control" formControlName="name" >
+  Name
+  <input id="name"  formControlName="name" >
 
   <div *ngIf="f.name.invalid && (f.name.dirty || f.name.touched)" class="alert alert-danger">
     <div *ngIf="f.name.errors?.required">

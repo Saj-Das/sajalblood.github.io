@@ -1,0 +1,9 @@
+<div class="col-md-12">
+  Child
+</div>
+<div class="col-md-12">
+  <textarea readonly class="txtast"> {{parentmsg}}</textarea>
+  <br>
+  <input type="text" [(ngModel)]="childmsg" >
+  <button (click)="onsubmit()">Submit
+  </button>
