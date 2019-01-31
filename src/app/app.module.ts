@@ -12,7 +12,6 @@ import { ChildcompComponent } from './childcomp/childcomp.component';
 import { TemprefComponent } from './tempref/tempref.component';
 import { ContentprojComponent } from './contentproj/contentproj.component';
 import { ViewchildComponent } from './viewchild/viewchild.component';
-import { TestcpComponent } from './testcp/testcp.component';
 import { ContentprojdemoComponent } from './contentprojdemo/contentprojdemo.component';
 @NgModule({
   declarations: [
@@ -25,7 +24,6 @@ import { ContentprojdemoComponent } from './contentprojdemo/contentprojdemo.comp
     TemprefComponent,
     ContentprojComponent,
     ViewchildComponent,
-    TestcpComponent,
     ContentprojdemoComponent,
 
   ],
